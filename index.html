@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Single-page design portfolio</title>
+</head>
+<style>
+  body {
+    font-family: Plus Jakarta, sans-serif;
+  }
+</style>
+<body class="p-0 m-0 scroll-smooth">
+
+<div class="background-color bg-[#FFF7F0]">
+  <header>
+    <nav class="flex justify-between max-w-[1440px] mx-auto px-5 py-7">
+      <img src="assets/logo.svg" alt="logo">
+      <button class="btn btn-secondary rounded-full bg-black border-none capitalize text-white font-medium hover:bg-[#755CDE] px-12">Free Consultation</button>
+    </nav>
+    <div class="titles px-8 text-center">
+      <h1 class="text-4xl font-black">Design solutions made easy</h1>
+      <p class="py-4 text-[#7A746E] md:max-w-md md:mx-auto">With over ten years of experience in various design disciplines, I'm your one-stop shop for your design needs.</p>
+    </div>
+    <div class="graphics px-5 grid grid-cols-1 md:grid-cols-2 gap-4 py-7 max-w-3xl mx-auto">
+      <div class="GD bg-[#755CDE] max-w-xs h-72 rounded-xl relative order-1">
+        <img src="assets/pattern-graphic-design.svg" alt="pattern" class="absolute right-5 top-5">
+        <h2 class="absolute bottom-5 left-5 text-white">Graphic Design</h2>
+      </div>
+      <div class="UI-APPS-Ill grid grid-cols-1 gap-4 order-2">
+        <div class="UI-and-Apps flex gap-4 md:h-32">
+          <div class="UI w-[150px] h-32 bg-[#F6A560] rounded-xl relative">
+            <img src="assets/pattern-ui-ux.svg" alt="" class="absolute top-2 right-2">
+            <h2 class="absolute bottom-2 left-2 text-white">UI/UX</h2>
+          </div>
+          <div class="Apps w-[150px] h-32 bg-[#F39E9E] rounded-xl relative">
+            <img src="assets/pattern-apps.svg" alt="" class="absolute top-2 right-2">
+            <h2 class="absolute bottom-2 left-2 text-white">Apps</h2>
+          </div>
+        </div>
+        <div class="illustrations max-w-xs h-32 bg-[#EB7565] rounded-xl relative">
+          <img src="assets/pattern-illustrations.svg" alt="" class="absolute top-2 right-2">
+          <h2 class="absolute bottom-2 left-2 text-white">Illustrations</h2>
+        </div>
+      </div>
+      
+      <div class="photography max-w-xs h-32 rounded-xl bg-[#61C4B7] relative order-3">
+        <img src="assets/pattern-photography.svg" alt="" class="absolute right-2 top-2">
+        <h2 class="absolute left-2 bottom-2 text-white">Photography</h2>
+      </div>
+      <div class="MG max-w-xs h-32 rounded-xl bg-[#552049] relative order-4">
+        <img src="assets/pattern-motion-graphics.svg" alt="" class="absolute right-2 top-2">
+        <h2 class="absolute left-2 bottom-2 text-white">Motion Graphics</h2>
+      </div>
+    </div>
+  </header>
+
+  <section class="introduction px-8 md:flex md:relative md:space-x-12 md:py-12 max-w-6xl mx-auto">
+    <img src="assets/image-amy.webp" alt="" class="md:w-96">
+    <div class="section-titles text-center md:text-left">
+      <h3 class="text-2xl font-black pt-7">I'm Amy, and I'd love to work on your next project</h3>
+      <p class="py-4 text-[#7A746E]">I love working with others to create beautiful design solutions. I've designed everything from brand illustrations 
+        to complete mobile apps. I'm also handy with a camera!</p>
+      <a href="#" class="btn btn-secondary rounded-full bg-[#EB7565] border-none capitalize text-white font-medium hover:bg-[#F6A560] px-12">Free Consultation</a>
+    </div>
+  </section>
+
+  <section class="slider py-14 max-w-3xl mx-auto">
+    <h1 class="text-center text-2xl font-black pb-7">My Work</h1>
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="assets/image-slide-1.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="assets/image-slide-2.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="assets/image-slide-3.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="/assets/image-slide-4.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a> 
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-footer px-5">
+    <div class="card w-full h-96 text-white rounded-xl bg-black">
+      <div class="card-body text-center">
+        <h2 class="text-2xl text-center">Book a call with me</h2>
+        <p class="text-[#FFF7F0] pt-9 md:max-w-md md:mx-auto ">I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
+          free consultation. Then we can move forward from there.</p>
+        <div class="card-actions justify-center">
+          <button class="btn btn-secondary rounded-full bg-[#EB7565] border-none capitalize text-white font-medium hover:bg-[#F6A560] px-12">Free Consultation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav class="flex justify-between max-w-[1440px] mx-auto px-5 py-7">
+    <img src="assets/logo.svg" alt="logo">
+    <button class="btn btn-secondary rounded-full bg-black border-none capitalize text-white font-medium hover:bg-[#755CDE] px-12">Free Consultation</button>
+  </nav>
+</div>
+  
+</body>
+</html>
